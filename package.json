@@ -11,10 +11,12 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.14",
     "@chakra-ui/react": "^2.4.4",
+    "@chakra-ui/toast": "^4.0.6",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@next/font": "13.0.7",
     "@stripe/stripe-js": "^1.46.0",
+    "axios": "^1.2.1",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
     "framer-motion": "^8.0.1",
@@ -22,6 +24,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "recoil": "^0.7.6",
     "stripe": "^11.4.0"
   },
   "devDependencies": {

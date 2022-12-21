@@ -20,13 +20,8 @@ export default function Home({ prices = [] }) {
 
       <section className='container mx-auto'>
         <h1 className='text-4xl mt-4 text-center'>Our Products</h1>
-        {/* <div className='mt-4 grid grid-cols-1 md:grid-cols-3 gap-4'>
 
-          {data.map(product => <Product product={product} />)}
-         
-        </div> */}
-
-        <div className='mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8'>
+        <div className='mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8'>
           {prices.map(price => (
             <Card key={price.id} price={price} />
           ))}

@@ -1,8 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import {FiShoppingCart} from 'react-icons/fi'
+import {FiShoppingCart} from 'react-icons/fi';
+import { cartState } from '../atoms/cartState';
+import {useRecoilState} from 'recoil';
 
 const Navbar = () => {
+
+    const [cartItem] = useRecoilState(cartState)
     
   return (
     <section className='shadow-xl bg-white sticky top-0'>
@@ -14,7 +18,7 @@ const Navbar = () => {
                 <Link href="/cart">
                     <div>
                         <FiShoppingCart />
-                        <span className='absolute -top-2 -right-2 text-[13px] bg-red-600 h-[18px] w-[18px] rounded-full grid place-items-center text-white'>0</span>
+                        <span className='absolute -top-2 -right-2 text-[13px] bg-red-600 h-[18px] w-[18px] rounded-full grid place-items-center text-white'>{cartItem.length}</span>
                     </div>
                 </Link>
             </div>
